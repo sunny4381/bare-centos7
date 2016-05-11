@@ -1,0 +1,12 @@
+packer_cache
+*.box
+*.log
+*.pem
+.vagrant
+
+# Mac
+.DS_Store
+
+# Windows image file caches
+Thumbs.db
+Desktop.ini
