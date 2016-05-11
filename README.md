@@ -11,7 +11,7 @@ VirtualBox 用の vagrant イメージのみを提供します。
 ## How to Build
 
 ```
-$ git clone https://github.com/shirasagi/bare-centos7.git
+$ git clone https://github.com/sunny4381/bare-centos7.git
 $ cd bare-centos7
 $ packer build -only=virtualbox-iso template.json
 $ vagrant box add bare-centos7 bare-centos7-x86_64.box
@@ -25,7 +25,7 @@ $ vagrant box add bare-centos7 bare-centos7-x86_64.box
     VAGRANTFILE_API_VERSION = "2"
     Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
       config.vm.box = "bare-centos7"
-      config.vm.box_url = "https://github.com/shirasagi/bare-centos7/releases/download/7.2.1511/bare-centos7-x86_64.box"
+      config.vm.box_url = "https://github.com/sunny4381/bare-centos7/releases/download/7.2.1511/bare-centos7-x86_64.box"
       # config.vm.network :forwarded_port, guest: 80, host: 8080
       # config.vm.network :forwarded_port, guest: 3000, host: 3000
     end
